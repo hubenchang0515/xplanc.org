@@ -14,6 +14,11 @@
     {
       "source": "/QtTheme/:path*",
       "destination": "https://qttheme.xplanc.org/QtTheme/:path*"
+    },
+
+    {
+      "source": "/Phosphophyllite/:path*",
+      "destination": "https://blog.xplanc.org/Phosphophyllite/:path*"
     }
   ],
 
@@ -33,6 +38,13 @@
     {
       "source": "/QtTheme",
       "destination": "/QtTheme/",
+      "permanent": true
+    },
+
+    
+    {
+      "source": "/Phosphophyllite",
+      "destination": "/Phosphophyllite/",
       "permanent": true
     }
   ]
