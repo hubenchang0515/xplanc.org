@@ -14,11 +14,26 @@
     {
       "source": "/QtTheme/:path*",
       "destination": "https://qttheme.xplanc.org/QtTheme/:path*"
+    }
+  ],
+
+  "redirects": [
+    {
+      "source": "/primers",
+      "destination": "/primers/",
+      "permanent": true
     },
 
     {
-      "source": "/:path*",
-      "destination": "https://primers.xplanc.org/:path*"
+      "source": "/shift",
+      "destination": "/shift/",
+      "permanent": true
+    },
+
+    {
+      "source": "/QtTheme",
+      "destination": "/QtTheme/",
+      "permanent": true
     }
   ]
 }
