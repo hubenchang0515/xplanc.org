@@ -2,11 +2,6 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/:path*",
-      "destination": "https://primers.xplanc.org/:path*"
-    },
-
-    {
       "source": "/primers/:path*",
       "destination": "https://primers.xplanc.org/:path*"
     },
@@ -19,6 +14,11 @@
     {
       "source": "/QtTheme/:path*",
       "destination": "https://qttheme.xplanc.org/:path*"
+    },
+
+    {
+      "source": "/:path*",
+      "destination": "https://primers.xplanc.org/:path*"
     }
   ]
 }
