@@ -41,5 +41,13 @@
       "source": "/Phosphophyllite/:path*",
       "destination": "https://blog.xplanc.org/Phosphophyllite/:path*"
     }
+  ],
+
+  "redirects": [
+    {
+      "source": "/QtTheme",
+      "destination": "/QtTheme/",
+      "permanent": true
+    }
   ]
 }
