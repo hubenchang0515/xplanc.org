@@ -41,32 +41,5 @@
       "source": "/Phosphophyllite/:path*",
       "destination": "https://blog.xplanc.org/Phosphophyllite/:path*"
     }
-  ],
-
-  "redirects": [
-    {
-      "source": "/primers",
-      "destination": "/primers/",
-      "permanent": true
-    },
-
-    {
-      "source": "/shift",
-      "destination": "/shift/",
-      "permanent": true
-    },
-
-    {
-      "source": "/QtTheme",
-      "destination": "/QtTheme/",
-      "permanent": true
-    },
-
-    
-    {
-      "source": "/Phosphophyllite",
-      "destination": "/Phosphophyllite/",
-      "permanent": true
-    }
   ]
 }
