@@ -75,20 +75,20 @@
     },
 
     {
-      "source": "/primers/document/en/02.Python/EX.Built-in%20functions.hide/:path*",
-      "destination": "/primers/document/en/02.Python/EX.Built-in%20functions/:path*",
+      "source": "/primers/document/en/02.Python/EX.Built-in functions.hide/:path*",
+      "destination": "/primers/document/en/02.Python/EX.Built-in functions/:path*",
       "permanent": true
     },
 
     {
-      "source": "/primers/document/zh/03.HTML/EX.HTML%20元素帮助手册.hide/:path*",
-      "destination": "/primers/document/zh/03.HTML/EX.HTML%20元素/:path*",
+      "source": "/primers/document/zh/03.HTML/EX.HTML 元素帮助手册.hide/:path*",
+      "destination": "/primers/document/zh/03.HTML/EX.HTML 元素/:path*",
       "permanent": true
     },
 
     {
-      "source": "/primers/document/en/03.HTML/EX.HTML%20Element%20Manual.hide/:path*",
-      "destination": "/primers/document/en/03.HTML/EX.HTML%20Elements/:path*",
+      "source": "/primers/document/en/03.HTML/EX.HTML Element Manual.hide/:path*",
+      "destination": "/primers/document/en/03.HTML/EX.HTML Elements/:path*",
       "permanent": true
     }
   ]
