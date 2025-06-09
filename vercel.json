@@ -82,7 +82,7 @@
 
     {
       "source": "/primers/document/zh/03.HTML/EX.HTML%20元素帮助手册.hide/:path*",
-      "destination": "/primers/document/zh/03.HTML/EX.HTML%20元素:path*",
+      "destination": "/primers/document/zh/03.HTML/EX.HTML%20元素/:path*",
       "permanent": true
     },
 
