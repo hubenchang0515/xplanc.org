@@ -52,6 +52,12 @@
     },
 
     {
+      "source": "/QtTheme/:path*",
+      "destination": "https://hubenchang0515.github.io/QtTheme/:path*",
+      "permanent": true
+    },
+
+    {
       "source": "/Phosphophyllite",
       "destination": "/Phosphophyllite/",
       "permanent": true
