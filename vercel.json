@@ -1,7 +1,6 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    
     {
       "source": "/primers/",
       "destination": "https://primers.xplanc.org/primers/"
@@ -20,16 +19,6 @@
     {
       "source": "/shift/:path*",
       "destination": "https://shift.xplanc.org/shift/:path*"
-    },
-
-    {
-      "source": "/QtTheme/",
-      "destination": "https://qttheme.xplanc.org/QtTheme/"
-    },
-
-    {
-      "source": "/QtTheme/:path*",
-      "destination": "https://qttheme.xplanc.org/QtTheme/:path*"
     },
 
     {
@@ -57,8 +46,8 @@
     },
 
     {
-      "source": "/QtTheme",
-      "destination": "/QtTheme/",
+      "source": "/QtTheme/",
+      "destination": "https://hubenchang0515.github.io/QtTheme/",
       "permanent": true
     },
 
