@@ -40,6 +40,12 @@
     },
 
     {
+      "source": "/primers/",
+      "destination": "/primers/document/zh",
+      "permanent": false
+    },
+
+    {
       "source": "/shift",
       "destination": "/shift/",
       "permanent": true
