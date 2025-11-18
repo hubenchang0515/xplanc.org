@@ -52,6 +52,12 @@
     },
 
     {
+      "source": "/uptime",
+      "destination": "https://stats.uptimerobot.com/wTSqLfXezb",
+      "permanent": true
+    },
+
+    {
       "source": "/QtTheme/",
       "destination": "https://hubenchang0515.github.io/QtTheme/",
       "permanent": true
