@@ -3,32 +3,32 @@
   "rewrites": [
     {
       "source": "/primers/",
-      "destination": "https://primers.xplanc.org/primers/"
+      "destination": "https://primers.xplanc.org/"
     },
 
     {
       "source": "/primers/:path*",
-      "destination": "https://primers.xplanc.org/primers/:path*"
+      "destination": "https://primers.xplanc.org/:path*"
     },
 
     {
       "source": "/shift/",
-      "destination": "https://shift.xplanc.org/shift/"
+      "destination": "https://shift.xplanc.org/"
     },
 
     {
       "source": "/shift/:path*",
-      "destination": "https://shift.xplanc.org/shift/:path*"
+      "destination": "https://shift.xplanc.org/:path*"
     },
 
     {
       "source": "/Phosphophyllite/",
-      "destination": "https://blog.xplanc.org/Phosphophyllite/"
+      "destination": "https://blog.xplanc.org/"
     },
 
     {
       "source": "/Phosphophyllite/:path*",
-      "destination": "https://blog.xplanc.org/Phosphophyllite/:path*"
+      "destination": "https://blog.xplanc.org/:path*"
     }
   ],
 
