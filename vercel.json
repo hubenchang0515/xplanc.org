@@ -22,13 +22,13 @@
     },
 
     {
-      "source": "/Phosphophyllite/",
-      "destination": "https://blog.xplanc.org/"
+      "source": "/idea/",
+      "destination": "https://idea.xplanc.org/"
     },
 
     {
-      "source": "/Phosphophyllite/:path*",
-      "destination": "https://blog.xplanc.org/:path*"
+      "source": "/idea/:path*",
+      "destination": "https://idea.xplanc.org/:path*"
     }
   ],
 
@@ -52,6 +52,12 @@
     },
 
     {
+      "source": "/idea",
+      "destination": "/idea/",
+      "permanent": true
+    },
+
+    {
       "source": "/uptime",
       "destination": "https://stats.uptimerobot.com/wTSqLfXezb",
       "permanent": true
@@ -71,7 +77,25 @@
 
     {
       "source": "/Phosphophyllite",
-      "destination": "/Phosphophyllite/",
+      "destination": "/idea/",
+      "permanent": true
+    },
+
+    {
+      "source": "/Phosphophyllite/",
+      "destination": "/idea/",
+      "permanent": true
+    },
+
+    {
+      "source": "/Phosphophyllite/articles/:path*",
+      "destination": "/idea/:path*.md",
+      "permanent": true
+    },
+
+    {
+      "source": "/Phosphophyllite/categories/:category*-:page*",
+      "destination": "/idea/:category*/page/:page*",
       "permanent": true
     },
 
