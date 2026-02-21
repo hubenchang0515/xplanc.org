@@ -52,6 +52,24 @@
     },
 
     {
+      "source": "/shift/wasm/:file.wasm",
+      "destination": "https://cdn.xplanc.org/shift/:file.wasm",
+      "permanent": true
+    },
+    
+    {
+      "source": "/shift/wasm/:file.data",
+      "destination": "https://cdn.xplanc.org/shift/:file.data",
+      "permanent": true
+    },
+
+    {
+      "source": "/shift/assets/:name(.*)-:hash.ttf",
+      "destination": "https://cdn.xplanc.org/fonts/:name.ttf",
+      "permanent": true
+    },
+
+    {
       "source": "/idea",
       "destination": "/idea/",
       "permanent": true
