@@ -9,7 +9,7 @@
     {
       "source": "/shift/:path*",
       "destination": "https://shift.xplanc.org/:path*"
-    },
+    }
   ],
 
   "redirects": [
@@ -30,8 +30,6 @@
       "destination": "https://primers.xplanc.org/:path*",
       "permanent": true
     },
-
-    
 
     {
       "source": "/idea",
