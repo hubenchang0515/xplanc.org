@@ -10,16 +10,6 @@
       "source": "/shift/:path*",
       "destination": "https://shift.xplanc.org/:path*"
     },
-
-    {
-      "source": "/idea/",
-      "destination": "https://idea.xplanc.org/"
-    },
-
-    {
-      "source": "/idea/:path*",
-      "destination": "https://idea.xplanc.org/:path*"
-    }
   ],
 
   "redirects": [
@@ -31,13 +21,6 @@
 
     {
       "source": "/primers/",
-      "destination": "/primers/document/zh",
-      "permanent": false
-    },
-
-    
-    {
-      "source": "/primers/",
       "destination": "https://primers.xplanc.org/",
       "permanent": true
     },
@@ -45,6 +28,26 @@
     {
       "source": "/primers/:path*",
       "destination": "https://primers.xplanc.org/:path*",
+      "permanent": true
+    },
+
+    
+
+    {
+      "source": "/idea",
+      "destination": "/idea/",
+      "permanent": true
+    },
+
+    {
+      "source": "/idea/",
+      "destination": "https://idea.xplanc.org/",
+      "permanent": true
+    },
+
+    {
+      "source": "/idea/:path*",
+      "destination": "https://idea.xplanc.org/:path*",
       "permanent": true
     },
 
@@ -69,12 +72,6 @@
     {
       "source": "/shift/assets/:name(.*)-:hash.ttf",
       "destination": "https://cdn.xplanc.org/fonts/:name.ttf",
-      "permanent": true
-    },
-
-    {
-      "source": "/idea",
-      "destination": "/idea/",
       "permanent": true
     },
 
