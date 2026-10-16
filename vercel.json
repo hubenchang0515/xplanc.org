@@ -2,16 +2,6 @@
   "cleanUrls": true,
   "rewrites": [
     {
-      "source": "/primers/",
-      "destination": "https://primers.xplanc.org/"
-    },
-
-    {
-      "source": "/primers/:path*",
-      "destination": "https://primers.xplanc.org/:path*"
-    },
-
-    {
       "source": "/shift/",
       "destination": "https://shift.xplanc.org/"
     },
@@ -43,6 +33,19 @@
       "source": "/primers/",
       "destination": "/primers/document/zh",
       "permanent": false
+    },
+
+    
+    {
+      "source": "/primers/",
+      "destination": "https://primers.xplanc.org/",
+      "permanent": true
+    },
+
+    {
+      "source": "/primers/:path*",
+      "destination": "https://primers.xplanc.org/:path*",
+      "permanent": true
     },
 
     {
