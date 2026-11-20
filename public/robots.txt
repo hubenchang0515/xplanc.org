@@ -4,3 +4,5 @@ Disallow: /document/
 Disallow: /cdn-cgi/
 
 Sitemap: https://xplanc.org/primers/sitemap.xml
+Sitemap: https://idea.xplanc.org/sitemap.xml
+Sitemap: https://daily.xplanc.org/sitemap.xml
