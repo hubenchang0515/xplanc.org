@@ -1,68 +1,98 @@
+/* ==========================================================================
+   1. 全局配色
+   ========================================================================== */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --accent: rgb(var(--accent-rgb));
+  --accent-rgb: 0, 240, 255;
+  --accent-2-rgb: 56, 189, 248;
+  --hud-live-color: rgb(var(--live-rgb, var(--accent-rgb)));
+  --bg-void: #03060f;
+  --text-main: #f4f9ff;
+  --text-dim: #94aac8;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+/* ==========================================================================
+   2. 全局重置与视口层级架构
+   ========================================================================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-void);
+  color: var(--text-main);
+  font-family: "Inter", "Noto Sans SC", system-ui, -apple-system, sans-serif;
+  overflow: hidden;
+  overflow: clip;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* 桌面精细指针设备启用自定义磁吸瞄准光标 */
+@media (hover: hover) and (pointer: fine) {
+  body.custom-cursor-ready,
+  body.custom-cursor-ready * {
+    cursor: none !important;
+  }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+::selection {
+  background: rgba(var(--accent-rgb), 0.34);
+  color: #ffffff;
+}
+
+/* 全屏 60fps 3D 超空间画布：严格处于最底层 z-index: 0 */
+#hyperspace-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+
+/* 深空暗角增强空间纵深 */
+.vignette-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 48%,
+    transparent 24%,
+    rgba(2, 5, 14, 0.5) 74%,
+    rgba(0, 0, 0, 0.88) 100%
+  );
+}
+
+/* 全息 CRT 扫描线叠层 */
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.25;
+  background:
+    linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.24) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.018), rgba(0, 255, 0, 0.008), rgba(0, 0, 255, 0.018));
+  background-size: 100% 3px, 4px 100%;
+}
+
+/* 主全息指挥舱容器 */
+.deck-shell {
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  touch-action: pinch-zoom;
 }
