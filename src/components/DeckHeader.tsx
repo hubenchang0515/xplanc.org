@@ -8,8 +8,7 @@ export function DeckHeader({ warpEngaged, onHome }: DeckHeaderProps) {
     <header className="top-hud">
       <button type="button" className="brand-node" onClick={onHome} aria-label="返回 XPLANC 首页">
         <span className="node-core-dot" />
-        <span className="brand-glitch" data-text="XPLANC">XPLANC</span>
-        <span className="brand-suffix">// DECK</span>
+        <span className="brand-glitch" data-text="XPLANC">XPLANC.ORG</span>
       </button>
 
       <div

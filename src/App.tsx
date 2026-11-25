@@ -68,7 +68,7 @@ function App() {
           <div className="deck-track" data-view={isHome ? 'home' : 'portals'}>
             <section className="hero-block" inert={!isHome}>
               <div className="hero-title-wrap">
-                <h1 className="hero-title">XPLANC</h1>
+                <h1 className="hero-title">X·PLAN·C</h1>
               </div>
               <div className="hero-scanline" aria-hidden="true" />
               <p className="hero-tagline">DIGITAL COMMAND DECK · 探索 · 记录 · 创造</p>
