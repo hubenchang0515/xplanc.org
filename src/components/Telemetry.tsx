@@ -61,7 +61,7 @@ export function Telemetry({ ref, warpEngaged }: TelemetryProps) {
         frames++
         const elapsed = now - fpsTick
         if (elapsed >= 450) {
-          fpsElement.textContent = String(Math.min(144, Math.round((frames * 1000) / elapsed)))
+          fpsElement.textContent = String(Math.min(999, Math.round((frames * 1000) / elapsed)))
           frames = 0
           fpsTick = now
         }
